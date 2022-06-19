@@ -1,0 +1,137 @@
+<template>
+    <div class="page">
+    <div id="#app">
+      <!-- Appbar -->
+      <div class="appbar" style="background: rgb(166, 206, 86)">
+        <div class="appbar-inner">
+          <div class="left">
+            <a href="#" class="button button-small panel-toggle display-flex bg-color-pink" data-panel="left">
+              <i class="f7-icons">bars</i>
+            </a>
+            <a href="#" class="button button-small display-flex margin-left-half bg-color-pink">
+              <i class="f7-icons">reply_fill</i>
+            </a>
+            
+          </div>
+          
+        </div>
+      </div>
+    
+  
+      <!-- Chips Form Button -->
+     
+      
+        <div class="chip">
+          <div class="chip-media bg-color-pink elevation-1">1</div>
+          
+          <a href="#" class="chip-delete"></a>
+        </div>
+  
+        <div class="chip">
+          <div class="chip-media bg-color-pink elevation-2">2</div>
+          
+          <a href="#" class="chip-delete"></a>
+        </div>
+  
+        <div class="chip">
+          <div class="chip-media bg-color-pink elevation-3">3</div>
+          
+          <a href="#" class="chip-delete"></a>
+        </div>
+  
+        <div class="chip">
+          <div class="chip-media bg-color-pink elevation-5">4</div>
+          
+          <a href="#" class="chip-delete"></a>
+        </div>
+  
+        <div class="chip">
+            <div class="chip-media bg-color-green elevation-3">5</div>
+            
+            <a href="#" class="chip-delete"></a>
+          </div>
+    
+    
+  
+  
+      <!--  Form Report -->
+      <form class="list" id="my-form">
+          <div class="page-content">
+            
+            <div class="card card-outline">
+              <div class="card-content card-content-padding">
+               <center><h1>Perlaporan Bertulis</h1></center> 
+               
+          
+            <ul>
+              <!--Tujuan-->
+              <li>
+                <div class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Tujuan</div>
+                    <div class="item-input-wrap">
+                      <select id="reporttype" name="report">
+                        <option value="male" style="border:1px solid black ">Laporan Siasatan</option>
+                        <option value="female" style="border:1px solid black ">Laporan Lawatan</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </li>
+               <!--Latar Belakang-->
+              <li>
+                <div class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Latar Belakang</div>
+                    <div class="item-input-wrap">
+                      <input style="border:1px solid black " type="email" name="lokasi" placeholder="Lokasi">
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!--Kronologi Aduan Kes-->
+              <li>
+                <div class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Kronologi Aduan Kes</div>
+                    <div class="item-input-wrap">
+                      <input style="border:1px solid black " type="text" placeholder="Select date and time" readonly="readonly" id="demo-calendar-date-time"/>
+                    </div>
+                  </div>
+                </div>
+              </li>
+               <!--Hasil Lawatan Siasatan Tapak-->
+              <li>
+                <div class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Hasil Lawatan Siasatan Tapak</div>
+                    <div class="item-input-wrap">
+                      <input style="border:1px solid black " type="email" name="pegawaiA" placeholder="Pegawai Yang Hadir">
+                    </div>
+                  </div>
+                </div>
+              </li>
+               
+              <!--Asas2 Pertimbangan (Punca Kuasa & Perundangan)-->
+              <!--Cadangan / Syor Penyelesaian -->
+              <!--Kesimpulan-->
+            
+        
+            </ul>
+          </div>
+          </form> 
+            
+  
+  
+  
+              </div>
+            </div>
+  
+  
+  
+          </div>
+        
+      </div>
+    </div>
+    </div>
+  </template>

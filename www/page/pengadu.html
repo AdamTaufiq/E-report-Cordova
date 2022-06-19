@@ -1,0 +1,206 @@
+<template>
+    <div class="page">
+    <div id="#app">
+      <!-- Appbar -->
+      <div class="appbar" style="background: rgb(166, 206, 86)">
+        <div class="appbar-inner">
+          <div class="left">
+            <a href="#" class="button button-small panel-toggle display-flex bg-color-pink" data-panel="left">
+              <i class="f7-icons">bars</i>
+            </a>
+            <a href="#" class="button button-small display-flex margin-left-half bg-color-pink">
+              <i class="f7-icons">reply_fill</i>
+            </a>
+            
+          </div>
+          
+        </div>
+      </div>
+    
+       <!-- code fab buton -->
+       <div id="btn_lsk_save" class="fab fab-right-bottom" style="color: #fff; position: fixed;">
+        <a style="background: yellowgreen">
+        <i style="font-size:30px" class="io-icon2 ion-checkmark-circled">+</i> 
+      </a>
+      <div class="fab-buttons fab-buttons-top">
+          <a href="#" class="fab-label-button">
+            <span>1</span>
+            <span class="fab-label">Lihat Laporan</span>
+          </a>
+          <a href="#" class="fab-label-button">
+            <span>2</span>
+            <span class="fab-label">Tulis Laporan</span>
+          </a>
+        </div>
+    </div> 
+  
+      <!-- Chips Form Button -->
+     
+      
+        <div class="chip">
+          <div class="chip-media bg-color-pink elevation-1">1</div>
+          
+          <a href="#" class="chip-delete"></a>
+        </div>
+  
+        <div class="chip">
+          <div class="chip-media bg-color-pink elevation-2">2</div>
+          
+          <a href="#" class="chip-delete"></a>
+        </div>
+  
+        <div class="chip">
+          <div class="chip-media bg-color-green elevation-3">3</div>
+          
+          <a href="#" class="chip-delete"></a>
+        </div>
+  
+        <div class="chip">
+          <div class="chip-media bg-color-pink elevation-5">4</div>
+          
+          <a href="#" class="chip-delete"></a>
+        </div>
+  
+        <div class="chip">
+            <div class="chip-media bg-color-pink elevation-3">5</div>
+            
+            <a href="#" class="chip-delete"></a>
+          </div>
+    
+    
+  
+  
+      <!--  Form Report -->
+      <form class="list" id="my-form">
+          <div class="page-content">
+            
+            <div class="card card-outline">
+              <div class="card-content card-content-padding">
+                <legend>Maklumat Pengadu</legend>
+               
+          
+            <ul>
+              <!--Sumber Aduan Kes-->
+              <div class="item-content item-input">
+                <div class="item-inner">
+                  <div class="item-title item-label">Jenis Aduan Kes</div>
+                  <div class="item-input-wrap">
+                    <input type="text" name="name" placeholder="Your name">
+                  </div>
+                </div>
+              </div>
+               <!--Tarikh Aduan Kes Diterima-->
+              <li>
+                <div class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Tarikh Aduan Kes Diterima</div>
+                    <div class="item-input-wrap">
+                      <input style="border:1px solid black " type="email" name="lokasi" placeholder="Lokasi">
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!--Kategori Aduan Kes-->
+              <li>
+                <div class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Kategori Aduan Kes</div>
+                    <div class="item-input-wrap">
+                      <input style="border:1px solid black " type="text" placeholder="Select date and time" readonly="readonly" id="demo-calendar-date-time"/>
+                    </div>
+                  </div>
+                </div>
+              </li>
+               <!--Pengadu-->
+              <li>
+                <div class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Pengadu</div>
+                    <div class="item-input-wrap">
+                      <input style="border:1px solid black " type="email" name="pegawaiA" placeholder="Pegawai Yang Hadir">
+                    </div>
+                  </div>
+                </div>
+              </li>
+              
+              <!--Nama Pengadu-->
+
+              <li>
+                <div class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Nama Pengadu</div>
+                    <div class="item-input-wrap">
+                      <input style="border:1px solid black " type="email" name="pegawaiA" placeholder="Pegawai Yang Hadir">
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <!--Alamat Pengadu-->
+
+              <li>
+                <div class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Alamat Pengadu</div>
+                    <div class="item-input-wrap">
+                      <input style="border:1px solid black " type="email" name="pegawaiA" placeholder="Pegawai Yang Hadir">
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <!--No. Rumah Premis/ Nama Jalan/ Poskod-->
+              <li>
+                <div class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Pengadu</div>
+                    <div class="item-input-wrap">
+                      <input style="border:1px solid black " type="email" name="pegawaiA" placeholder="Pegawai Yang Hadir">
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <!--Nama Taman/ Bandar/ Negeri-->
+              <li>
+                <div class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Pengadu</div>
+                    <div class="item-input-wrap">
+                      <input style="border:1px solid black " type="email" name="pegawaiA" placeholder="Pegawai Yang Hadir">
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <!--No Telefon-->
+              <li>
+                <div class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">No Telefon</div>
+                    <div class="item-input-wrap">
+                      <input style="border:1px solid black " type="email" name="pegawaiA" placeholder="Pegawai Yang Hadir">
+                    </div>
+                  </div>
+                </div>
+              </li>
+            
+        
+            </ul>
+          </div>
+          </form> 
+            
+  
+  
+  
+              </div>
+            </div>
+  
+  
+  
+          </div>
+        
+      </div>
+    </div>
+    </div>
+  </template>

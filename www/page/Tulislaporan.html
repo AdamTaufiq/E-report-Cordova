@@ -1,0 +1,601 @@
+<template>
+    <div class="page">
+       <!-- code iqbal -->
+      <div id="btn_lsk_save" class="fab fab-right-bottom" style="color: #fff;  position: absolute; bottom: 60px;
+      right: 16px;
+      font-size: 18px;">
+          <a style="background: rgb(64, 132, 177)">
+              <i style="font-size:20px" class="circled material-icons">filter_list</i>
+          </a>
+          <div class="fab-buttons fab-buttons-top">
+              <a href="#" class="fab-label-button">
+                  <span class="material-icons">menu_book</span>
+                  <span class="fab-label">Lihat Laporan</span>
+              </a>
+              <a href="#" class="fab-label-button">
+                <span class="material-icons">create</span>
+                  <span class="fab-label">Tulis Laporan</span>
+              </a>
+              <a href="#" class="fab-label-button">
+                <span class="material-icons">how_to_vote</span>
+                  <span class="fab-label">Status Laporan</span>
+              </a>
+             
+          </div>
+      </div>
+
+
+        <!-- Navbar  -->
+        <div class="navbar" style="background: rgb(213, 224, 213)">
+            <div class="navbar-inner">
+                <div class="left">
+                    <a class="link icon-only">
+                        
+                        <i class="icon material-icons md-only">account_circle</i>
+                    </a>
+                </div>
+                <div class="title"
+                    style="position: absolute; left: 0; top: 50%; width: 100%; text-align: center; font-size: 20px;">
+                    E-Report</div>
+                <div class="right">
+                    <a class="link icon-only">
+                        <i class="icon f7-icons if-not-md">announcement<span class="badge color-red"></span></i>
+                        <i class="icon material-icons md-only">announcement<span class="badge color-red"></span></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional "tabbar" class -->
+        <div class="toolbar tabbar tabbar-scrollable  toolbar-bottom">
+            <div class="toolbar-inner">
+                <!-- Links have "tab-link" class instead of just "link" to switch tabs -->
+                <a href="#tab-1" class="tab-link tab-link-active">Maklumat Utama</a>
+                <a href="#tab-2" class="tab-link">Maklumat Aduan Kes</a>
+                <a href="#tab-3" class="tab-link">Maklumat Pengadu</a>
+                <a href="#tab-4" class="tab-link">Maklumat Pelaku</a>
+                <a href="#tab-5" class="tab-link">Pelaporan Bertulis</a>
+            </div>
+        </div>
+        <!-- Tabs -->
+        <div class="page-content" style="background: rgb(185, 185, 185)">
+            <div class="tabs">
+                <!-- First tab, active -->
+                <div class="page-content tab tab-active" id="tab-1">
+                    <div class="card boxshadow">
+                        <div class="card-content" style="background: rgb(181, 185, 171);">
+                            <table style="width: 100%;">
+                                <tr>
+                                    <td style="padding-top: 3%; padding-left: 3%; padding-right: 3%;">
+                                        <div class="row"
+                                            style=" width: 100%; color: black; text-align: center; font-weight: 600; font-size: 20px; text-shadow: 2px 2px 5px red; ">
+                                            MAKLUMAT UTAMA
+                                            <br />
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td style="padding-top: 3%; padding-left: 3%; padding-right: 3%;">
+                                        <div class="row"
+                                            style="width: 100%; color: white; font-weight: 600; font-size: medium;">
+                                            <label for="fname">Kategori Laporan</label>
+                                            <select id="country" name="country"
+                                                style="width: 100%; padding: 12px 20px; margin: 8px 0; box-sizing: border-box; border: none; background-color: #3CBC8D;">
+                                                <option value="australia">Laporan Lawatan/Siasatan Tapak</option>
+                                                <option value="canada">Laporan Mesyuarat</option>
+
+                                            </select>
+                                            <br />
+                                            <label for="fname">Unit Pejabat</label>
+                                            <select id="country" name="country"
+                                                style="width: 100%; padding: 12px 20px; margin: 8px 0; box-sizing: border-box; border: none; background-color: #3CBC8D;">
+                                                <option value="australia">Unit Pejabat Wilayah Selangor/Bernam (UPWSB)
+                                                </option>
+                                                <option value="canada">Unit Pejabat Wilayah Klang/Sg. Buloh (UPWKB)
+                                                </option>
+                                                <option value="canada">Unit Pejabat Wilayah Langat/Sepang (UPWLS)
+                                                </option>
+                                                <option value="canada">Unit Pengurusan Alam Sekitar (UPAS)</option>
+                                                <option value="canada">Unit Pengurusan Makmal (UPM)</option>
+                                                <option value="canada">Unit Hidrologi (UH)</option>
+                                                <option value="canada">Unit Pengubahan Sumber (UPS)</option>
+                                                <option value="canada">Unit Abstraksi Air (UAA)</option>
+                                                <option value="canada">Unit Kawalan Badan Air (UKBA)</option>
+                                                <option value="canada">Unit Perancangan Dan Penyelidikan (UPP)</option>
+                                                <option value="canada">Unit Projek (UP)</option>
+                                                <option value="canada">Unit Perundangan</option>
+                                                <option value="canada">Unit Penguatkuasaan</option>
+
+
+                                            </select>
+                                            <br />
+                                            <label for="fname">Bahagian</label>
+                                            <select id="country" name="country"
+                                                style="width: 100%; padding: 12px 20px; margin: 8px 0; box-sizing: border-box; border: none; background-color: #3CBC8D;">
+                                                <option value="australia">Bahagian Pengurusan Lembangan Sungai dan
+                                                    Pantai (BPLSP)</option>
+                                                <option value="canada">Bahagian Perancangan dan Pembangunan (BPP)
+                                                </option>
+                                                <option value="usa">Bahagian Perundangan Dan Penguatkuasaan (BUU)
+                                                </option>
+                                            </select>
+                                            <br />
+                                            <label for="fname">Tarikh Laporan</label>
+                                            <input type="text" id="fname" name="firstname" placeholder="Tarikh"
+                                                style="width: 100%; padding: 12px 20px; margin: 8px 0; box-sizing: border-box; border: none; background-color: #3CBC8D;">
+                                            <br />
+                                            <label for="fname">Masa</label>
+                                            <input type="text" id="fname" name="firstname" placeholder="Masa"
+                                                style="width: 100%; padding: 12px 20px; margin: 8px 0; box-sizing: border-box; border: none; background-color: #3CBC8D;">
+                                            <br />
+                                            <a href="#tab-2" class="button">Next</a>
+                                            <br />
+
+                                        </div>
+                                    </td>
+                                </tr>
+                                <br />
+
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- Second tab -->
+                <div class="page-content tab" id="tab-2">
+                    <div class="card boxshadow">
+                        <div class="card-content" style="background: rgb(181, 185, 171);">
+                            <table style="width: 100%;">
+                                <tr>
+                                    <td style="padding-top: 3%; padding-left: 3%; padding-right: 3%;">
+                                        <div class="row"
+                                            style="width: 100%; color: white; font-weight: 600; font-size: medium;">
+                                            MAKLUMAT ADUAN KES
+                                            <br />
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td style="padding-top: 3%; padding-left: 3%; padding-right: 3%;">
+                                        <div class="row"
+                                            style="width: 100%; color: white; font-weight: 600; font-size: medium;">
+                                            <label for="fname">Jenis Aduan Kes</label>
+                                            <select id="country" name="country"
+                                                style="width: 100%; padding: 12px 20px; margin: 8px 0; box-sizing: border-box; border: none; background-color: #3CBC8D;">
+                                                <option value="">Semakan Permohonan</option>
+                                                <option value="">Aktiviti Kerja Tanah</option>
+                                                <option value="">Aktiviti Pertanian</option>
+                                                <option value="">Aktiviti Penternakan</option>
+                                                <option value="">Aktiviti Perlombongan</option>
+                                                <option value="">Aktiviti Pencucian Pasir</option>
+                                                <option value="">Aktiviti Kilang</option>
+                                                <option value="">Aktiviti Akuakultur</option>
+                                                <option value="usa">Aktiviti Pembuangan Sampah</option>
+                                                <option value="usa">Aktiviti Rekreasi</option>
+                                                <option value="usa">Aktiviti Pencerobohan Kawasan Larangan</option>
+                                                <option value="usa">Sisa Buangan Air Kumbahan Domestik</option>
+                                                <option value="usa">Sisa Buangan Air Kumbahan Kilang</option>
+                                                <option value="usa">Sisa Buangan Tapak Pelupusan Sampah (Leachet)
+                                                </option>
+                                                <option value="usa">Sisa Buangan Tapak Pembinaan</option>
+                                                <option value="usa">Hakisan Tebing</option>
+                                                <option value="usa">Tumpahan Minyak/ Bahan Kimia</option>
+                                                <option value="usa">Pencemaran Bau</option>
+                                                <option value="usa">Kualiti Air Berbuih</option>
+                                                <option value="usa">Kualiti Air Hitam/Keroh</option>
+                                                <option value="usa">Pengambusan/Penutupan Sumber Air</option>
+                                                <option value="usa">Penjajaran/ Pengalihan Sumber Air</option>
+                                                <option value="usa">Aktiviti Pembinaan Di Atas Rizab Sungai</option>
+
+
+                                            </select>
+                                            <br />
+                                            <label for="fname">Sumber Air Terlibat</label>
+                                            <select id="country" name="country"
+                                                style="width: 100%; padding: 12px 20px; margin: 8px 0; box-sizing: border-box; border: none; background-color: #3CBC8D;">
+                                                <option value="australia">Sungai Utama </option>
+                                                <option value="canada">Anak Sungai</option>
+                                                <option value="usa">Parit Tanah</option>
+                                                <option value="canada">Rizab</option>
+                                                <option value="canada">Pengairan Pertanian</option>
+                                                <option value="canada">Longkang Konkrit</option>
+                                                <option value="canada">Kolam/Tasik/Bekas Lombong Semulajadi</option>
+                                                <option value="canada">Kolam/Tasik/Bekas Lombong Buatan</option>
+                                                <option value="canada">Kawasan Warta Zon Perlindungan</option>
+                                                <option value="canada">Empangan</option>
+                                                <option value="canada">Kawasan Tadahan Air Empangan</option>
+                                                <option value="canada">Abstraksi Air Permukaan</option>
+                                                <option value="canada">Abstraksi Air Bawah Tanah</option>
+                                                <option value="canada">Perairan Pantai</option>
+                                            </select>
+                                            <br />
+                                            <label for="fname">Nama Sumber Air</label>
+                                            <input type="text" id="fname" name="firstname" placeholder="Nama Sumber Air"
+                                                style="width: 100%; padding: 12px 20px; margin: 8px 0; box-sizing: border-box; border: none; background-color: #3CBC8D;">
+
+                                            <br />
+                                            <label for="fname">Tempat Kejadian</label>
+                                            <select id="country" name="country"
+                                                style="width: 100%; padding: 12px 20px; margin: 8px 0; box-sizing: border-box; border: none; background-color: #3CBC8D;">
+                                                <option value="australia">Dalam Sumber Air </option>
+                                                <option value="canada">Dalam 50 Meter Dari Tebing Sumber Air</option>
+                                                <option value="usa">Luar 50 Meter Dari Tebing Sumber Air</option>
+                                                <option value="usa">Dalam Rizab Sungai</option>
+                                                <option value="usa">Dalam 3 Batu Nautika (5.56KM) Dari Garis Perairan
+                                                    Pantai</option>
+                                                <option value="usa">Luar 3 Batu Nautika (5.56 KM) Dari Garis Perairan
+                                                    Pantai</option>
+                                                <option value="usa">Dalam 60 Meter Dari Garis Perairan Pantai Ke Daratan
+                                                    (Pantai Berpasir)</option>
+                                                <option value="usa">Luar 60 Meter Dari Garis Perairan Pantai Ke Daratan
+                                                    (Pantai Berpasir)</option>
+                                                <option value="usa">Dalam 400 Meter Dari Garis Perairan Pantai Ke
+                                                    Daratan (Pantai Berlumpur)</option>
+                                                <option value="usa">Luar 400 Meter Dari Garis Perairan Pantai Ke Daratan
+                                                    (Pantai Berlumpur)</option>
+                                            </select>
+                                            <br />
+
+                                            <label for="fname">Maklumat Lokasi</label>
+                                            <input type="text" id="fname" name="firstname" placeholder="Maklumat Lokasi"
+                                                style="width: 100%; padding: 12px 20px; margin: 8px 0; box-sizing: border-box; border: none; background-color: #3CBC8D;">
+
+                                            <br />
+                                            <label for="fname">Maklumat Sauk Terdekat</label>
+                                            <select id="country" name="country"
+                                                style="width: 100%; padding: 12px 20px; margin: 8px 0; box-sizing: border-box; border: none; background-color: #3CBC8D;">
+                                                <option value="">Intake SSP1 (Bestari Jaya)</option>
+                                                <option value="">Intake SSP2</option>
+                                                <option value="">Intake SSP3 (Bukit Badong)</option>
+                                                <option value="">Intake Rantau Panjang</option>
+                                                <option value="">Intake Sg. Batang Kali</option>
+                                                <option value="">Intake SSP3 (Sg. Rasa)</option>
+                                                <option value="">Intake Sg. Buaya</option>
+                                                <option value="">Intake Sg. Rangkap</option>
+                                                <option value="">Intake KKB</option>
+                                                <option value="">Intake BRH</option>
+                                                <option value="">Intake Kalumpang</option>
+                                                <option value="">Intake Sg. Selisek</option>
+                                                <option value="">Intake Sg. Dusun</option>
+                                                <option value="">Intake Sg. Tengi</option>
+                                                <option value="">Intake Sg. Sireh</option>
+                                                <option value="">Intake Sg. Semenyih</option>
+                                                <option value="">Intake ORS Sg. Labu</option>
+                                                <option value="">Intake Salak Tinggi</option>
+                                                <option value="">Intake Cheras Bt. 11</option>
+                                                <option value="">Intake Sg. Serai</option>
+                                                <option value="">Intake Sg. Langat</option>
+                                                <option value="">Intake Sg. Pangsoon</option>
+                                                <option value="">Intake Sg. Lolo (Lama)</option>
+                                                <option value="">Intake Sg. Lolo (Baru)</option>
+                                                <option value="">Intake Bukit Tampoi</option>
+                                                <option value="">Intake Sg. Gombak</option>
+                                                <option value="">Intake Sg. Rumput</option>
+                                                <option value="">Intake Ampang</option>
+                                                <option value="">Intake Bukit Nanas</option>
+                                                <option value="">Intake Sg. Batu</option>
+                                                <option value="">Intake Wangsa Maju</option>
+                                                <option value="">Intake Sg. Air Keroh</option>
+                                                <option value="">Intake North Hummock</option>
+                                                <option value="">Intake Kepong</option>
+
+
+                                            </select>
+                                            <br />
+
+                                            <label for="fname">Loji Rawatan Air Terdekat</label>
+                                            <select id="country" name="country"
+                                                style="width: 100%; padding: 12px 20px; margin: 8px 0; box-sizing: border-box; border: none; background-color: #3CBC8D;">
+                                                <option value="">LRA SSP1 (Bestari Jaya)</option>
+                                                <option value="">LRA SSP2</option>
+                                                <option value="">LRA SSP3 (Bukit Badong)</option>
+                                                <option value="">LRA Rantau Panjang</option>
+                                                <option value="">LRA Sg. Batang Kali</option>
+                                                <option value="">LRA SSP3 (Sg. Rasa)</option>
+                                                <option value="">LRA Sg. Buaya</option>
+                                                <option value="">LRA Sg. Rangkap</option>
+                                                <option value="">LRA KKB</option>
+                                                <option value="">LRA BRH</option>
+                                                <option value="">LRA Kalumpang</option>
+                                                <option value="">LRA Sg. Selisek</option>
+                                                <option value="">LRA Sg. Dusun</option>
+                                                <option value="">LRA Sg. Tengi</option>
+                                                <option value="">LRA Sg. Sireh</option>
+                                                <option value="">LRA Sg. Semenyih</option>
+                                                <option value="">LRA ORS Sg. Labu</option>
+                                                <option value="">LRA Salak Tinggi</option>
+                                                <option value="">LRA Cheras Bt. 11</option>
+                                                <option value="">LRA Sg. Serai</option>
+                                                <option value="">LRA Sg. Langat</option>
+                                                <option value="">LRA Sg. Pangsoon</option>
+                                                <option value="">LRA Sg. Lolo (Lama)</option>
+                                                <option value="">LRA Sg. Lolo (Baru)</option>
+                                                <option value="">LRA Bukit Tampoi</option>
+                                                <option value="">LRA Sg. Gombak</option>
+                                                <option value="">LRA Sg. Rumput</option>
+                                                <option value="">LRA Intake Ampang</option>
+                                                <option value="">LRA Bukit Nanas</option>
+                                                <option value="">LRA Sg. Batu</option>
+                                                <option value="">LRA Wangsa Maju</option>
+                                                <option value="">LRA Sg. Air Keroh</option>
+                                                <option value="">LRA North Hummock</option>
+                                                <option value="">LRA Kepong</option>
+
+
+                                            </select>
+                                            <br />
+                                            <a href="" class="button">Previous</a>
+                                            <br />
+                                            <a href="" class="button">Next</a>
+                                            <br />
+                                        </div>
+                                    </td>
+                                </tr>
+                                <br />
+
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- Third tab -->
+                <div class="page-content tab" id="tab-3">
+                    <div class="card boxshadow">
+                        <div class="card-content" style="background: rgb(181, 185, 171);">
+                            <table style="width: 100%;">
+                                <tr>
+                                    <td style="padding-top: 3%; padding-left: 3%; padding-right: 3%;">
+                                        <div class="row"
+                                            style="width: 100%; color: white; font-weight: 600; font-size: medium;">
+                                            MAKLUMAT PENGADU
+                                            <br />
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td style="padding-top: 3%; padding-left: 3%; padding-right: 3%;">
+                                        <div class="row"
+                                            style="width: 100%; color: white; font-weight: 600; font-size: medium;">
+                                            <label for="fname">Sumber Aduan/Kes</label>
+                                            <select id="country" name="country"
+                                                style="width: 100%; padding: 12px 20px; margin: 8px 0; box-sizing: border-box; border: none; background-color: #3CBC8D;">
+                                                <option value="">Surat Rasmi</option>
+                                                <option value="">Sistem e-Ticket LUAS</option>
+                                                <option value="">Media Sosial (Whatsapps, Twitter & Facebook)</option>
+                                                <option value="">Email</option>
+                                                <option value="">Telefon</option>
+                                            </select>
+                                            <br />
+                                            <label for="fname">Tarikh Aduan Kes</label>
+                                            <select id="country" name="country"
+                                                style="width: 100%; padding: 12px 20px; margin: 8px 0; box-sizing: border-box; border: none; background-color: #3CBC8D;">
+                                                <option value="australia">aa</option>
+                                                <option value="canada">Canada</option>
+                                                <option value="usa">USA</option>
+                                            </select>
+                                            <br />
+                                            <label for="fname">Kategori Aduan Kes</label>
+                                            <select id="country" name="country"
+                                                style="width: 100%; padding: 12px 20px; margin: 8px 0; box-sizing: border-box; border: none; background-color: #3CBC8D;">
+                                                <option value="">Baru</option>
+                                                <option value="">Berulang</option>
+                                                <option value="">Dalam Tindakan Siasatan</option>
+                                            </select>
+                                            <br />
+                                            <label for="fname">Pengadu</label>
+                                            <select id="country" name="country"
+                                                style="width: 100%; padding: 12px 20px; margin: 8px 0; box-sizing: border-box; border: none; background-color: #3CBC8D;">
+                                                <option value="">Agensi Kerajaan</option>
+                                                <option value="">Individu</option>
+                                                <option value="">Syarikat</option>
+                                                <option value="">NGO's</option>
+                                            </select>
+                                            <br />
+
+
+                                            <label for="fname">Nama Pengadu</label>
+                                            <input type="text" id="fname" name="firstname" placeholder="Nama Pengadu"
+                                                style="width: 100%; padding: 12px 20px; margin: 8px 0; box-sizing: border-box; border: none; background-color: #3CBC8D;">
+                                            <br />
+
+
+                                            <label for="fname">Alamat Pengadu</label>
+                                            <input type="text" id="fname" name="firstname" placeholder="Alamat"
+                                                style="width: 100%; padding: 12px 20px; margin: 8px 0; box-sizing: border-box; border: none; background-color: #3CBC8D;">
+                                            <br />
+
+                                            <label for="fname">No Telefon</label>
+                                            <input type="text" id="fname" name="firstname" placeholder="No Telefon"
+                                                style="width: 100%; padding: 12px 20px; margin: 8px 0; box-sizing: border-box; border: none; background-color: #3CBC8D;">
+                                            <br />
+                                            <a href="" class="button">Previous</a>
+                                            <br />
+                                            <a href="" class="button">Next</a>
+                                            <br />
+                                        </div>
+                                    </td>
+                                </tr>
+                                <br />
+
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- 4 tab -->
+                <div class="page-content tab" id="tab-4">
+                    <div class="card boxshadow">
+                        <div class="card-content" style="background: rgb(181, 185, 171);">
+                            <table style="width: 100%;">
+                                <tr>
+                                    <td style="padding-top: 3%; padding-left: 3%; padding-right: 3%;">
+                                        <div class="row"
+                                            style="width: 100%; color: white; font-weight: 600; font-size: medium;">
+                                            MAKLUMAT PELAKU
+                                            <br />
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td style="padding-top: 3%; padding-left: 3%; padding-right: 3%;">
+                                        <div class="row"
+                                            style="width: 100%; color: white; font-weight: 600; font-size: medium;">
+                                            <label for="fname">Kategori Pelaku</label>
+                                            <select id="country" name="country"
+                                                style="width: 100%; padding: 12px 20px; margin: 8px 0; box-sizing: border-box; border: none; background-color: #3CBC8D;">
+                                                <option value="">Agensi Kerajaan</option>
+                                                <option value="">Individu</option>
+                                                <option value="">Syarikat</option>\
+                                                <option value="">NGO's</option>
+                                            </select>
+                                            <br />
+
+                                            <label for="fname">Nama Pelaku</label>
+                                            <input type="text" id="fname" name="firstname" placeholder="Nama Pelaku"
+                                                style="width: 100%; padding: 12px 20px; margin: 8px 0; box-sizing: border-box; border: none; background-color: #3CBC8D;">
+                                            <br />
+
+                                            <label for="fname">No KP atau No Syarikat</label>
+                                            <input type="text" id="fname" name="firstname" placeholder="No KP/Syarikat"
+                                                style="width: 100%; padding: 12px 20px; margin: 8px 0; box-sizing: border-box; border: none; background-color: #3CBC8D;">
+                                            <br />
+
+                                            <label for="fname">Alamat</label>
+                                            <input type="text" id="fname" name="firstname" placeholder="Alamat"
+                                                style="width: 100%; padding: 12px 20px; margin: 8px 0; box-sizing: border-box; border: none; background-color: #3CBC8D;">
+                                            <br />
+
+                                            <label for="fname">No Telefon</label>
+                                            <input type="text" id="fname" name="firstname" placeholder="No Telefon"
+                                                style="width: 100%; padding: 12px 20px; margin: 8px 0; box-sizing: border-box; border: none; background-color: #3CBC8D;">
+                                            <br />
+
+                                            <label for="fname">No Faks</label>
+                                            <input type="text" id="fname" name="firstname" placeholder="No Faks"
+                                                style="width: 100%; padding: 12px 20px; margin: 8px 0; box-sizing: border-box; border: none; background-color: #3CBC8D;">
+                                            <br />
+                                            
+                                            <a href="" class="button">Previous</a>
+                                            <br />
+                                            <a href="" class="button">Next</a>
+                                            <br />  
+
+                                        </div>
+                                    </td>
+                                </tr>
+                                <br />
+
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- 5 tab -->
+                <div class="page-content tab" id="tab-5">
+                    <div class="card boxshadow">
+                        <div class="card-content" style="background: rgb(181, 185, 171);">
+                            <table style="width: 100%;">
+                                <tr>
+                                    <td style="padding-top: 3%; padding-left: 3%; padding-right: 3%;">
+                                        <div class="row"
+                                            style="width: 100%; color: white; font-weight: 600; font-size: medium;">
+                                            PELAPORAN BERTULIS
+                                            <br />
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td style="padding-top: 3%; padding-left: 3%; padding-right: 3%;">
+                                        <div class="row"
+                                            style="width: 100%; color: white; font-weight: 600; font-size: medium;">
+                                            <label for="fname">Tarikh </label>
+                                            <input type="text" id="fname" name="firstname" placeholder="Tarikh"
+                                                style="width: 100%; padding: 12px 20px; margin: 8px 0; box-sizing: border-box; border: none; background-color: #3CBC8D;">
+                                            <br />
+
+                                            <label for="fname">Latar Belakang </label>
+                                            <input type="text" id="fname" name="firstname" placeholder="Latar Belakang"
+                                                style="width: 100%; padding: 12px 20px; margin: 8px 0; box-sizing: border-box; border: none; background-color: #3CBC8D;">
+                                            <br />
+
+                                            <label for="fname">Kronologi Aduan Kes </label>
+                                            <input type="text" id="fname" name="firstname" placeholder=""
+                                                style="width: 100%; padding: 12px 20px; margin: 8px 0; box-sizing: border-box; border: none; background-color: #3CBC8D;">
+                                            <br />
+
+                                            <label for="fname">Hasil Lawatan/ Sasaran Tapak </label>
+                                            <input type="text" id="fname" name="firstname" placeholder=""
+                                                style="width: 100%; padding: 12px 20px; margin: 8px 0; box-sizing: border-box; border: none; background-color: #3CBC8D;">
+                                            <br />
+
+                                            <label for="fname">Asas-asas Pertimbanagn (Punca Kuasa dan Perundangan)
+                                            </label>
+                                            <input type="text" id="fname" name="firstname" placeholder=""
+                                                style="width: 100%; padding: 12px 20px; margin: 8px 0; box-sizing: border-box; border: none; background-color: #3CBC8D;">
+                                            <br />
+
+                                            <label for="fname">Cadangan Penyelesaian </label>
+                                            <input type="text" id="fname" name="firstname" placeholder=""
+                                                style="width: 100%; padding: 12px 20px; margin: 8px 0; box-sizing: border-box; border: none; background-color: #3CBC8D;">
+                                            <br />
+
+                                            <label for="fname">Kesimpulan </label>
+                                            <input type="textarea" id="fname" name="firstname" placeholder="" 
+                                                style="width: 100%; height: 150px;  box-sizing: border-box; border: none; background-color: #3CBC8D;">
+
+                                              
+                                            <br />
+                                            <div class="row"
+                                            style="width: 100%; color: white; font-weight: 600; font-size: medium; padding-top: 3%; padding-left: 3%; padding-right: 3%;">
+                                            <button id="CameraApp" ><i class="material-icons">photo_camera</i>Ambil Gambar</button>
+                                        </div>
+                                             <div style="border: 2px solid; width: 300px; min-height: 100px;">
+                                                 <img src="" id="myImage">
+                                             </div>
+                                               <script type="text/javascript">
+                                               document.getElementById('cameraApp').addEventListener('click',cameraApp);
+                                               function cameraApp (){
+                                                   navigator.camera.getPicture(onSuccess,onFail,{
+                                                       quality:100,
+                                                       saveToPhotoAlbum:true,
+                                                       destinationType:Camera.DestinationType.DATA_URL
+                                                   });
+                                                   function onSuccess(imageData){
+                                                       var image = document.getElementById('myImage');
+                                                       image.src = "data:image/jpeg;base64," + imageURI;
+                                                   }
+                                                   function onFail(message){
+                                                       alert('Failed because: ' + message);
+                                                   }
+                                               }
+                                            </script>
+
+
+                                            <br />
+
+                                            <a href="" class="button">Previous</a>
+                                            <br />
+                                            <a href="" class="button">Next</a>
+                                            <br />  
+
+                                        </div>
+                                    </td>
+                                </tr>
+                                <br />
+
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
